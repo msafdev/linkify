@@ -49,7 +49,7 @@ const DarkMode = () => {
   return (
     <button
       onClick={toggleDark}
-      className="w-8 h-8 border rounded-full bg-popover flex items-center justify-center absolute right-6 top-6"
+      className="w-8 h-8 border rounded-full bg-popover flex items-center justify-center absolute right-6 top-6 z-20"
     >
       {dark ? <RxSun size={16} /> : <RxMoon size={16} />}
     </button>
