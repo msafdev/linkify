@@ -30,7 +30,7 @@ export default function Home() {
         <DarkMode />
 
         {/* Main UI */}
-        <div className="flex w-full items-center justify-center gap-x-3 mb-4">
+        <div className="flex w-full items-center justify-center gap-x-3 mb-4 z-10">
           <div className="w-16 h-auto aspect-square relative rounded-full overflow-hidden p-1 border bg-black">
             <Image
               src={Avatar}
@@ -48,7 +48,7 @@ export default function Home() {
           </div>
         </div>
 
-        <div className="flex w-full items-end justify-center gap-x-3 mb-4 flex-wrap">
+        <div className="flex w-full items-end justify-center gap-x-3 mb-4 flex-wrap z-10">
           {Socials.map((social, index) => (
             <Link key={index} href={social.href}>
               <social.icon className="w-5 h-5 text-foreground animate" />
@@ -56,7 +56,7 @@ export default function Home() {
           ))}
         </div>
 
-        <div className="flex flex-col gap-y-2 h-fit w-full p-2 rounded-xl border bg-popover backdrop-blur-sm animate">
+        <div className="flex flex-col gap-y-2 h-fit w-full p-2 rounded-xl border bg-popover backdrop-blur-sm animate z-10">
           <p className="text-clamp-sm text-popover-foreground w-fit animate">
             Creative Fullstack Developer Focusing on Next.js, Tailwind CSS and
             Supabase.
@@ -74,7 +74,7 @@ export default function Home() {
         ))}
 
         {/* Item Card */}
-        <div className="grid grid-cols-2 w-full gap-3">
+        <div className="grid grid-cols-2 w-full gap-3 z-10">
           {Products.map((product, index) => (
             <div
               key={index}
