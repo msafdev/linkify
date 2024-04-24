@@ -51,12 +51,12 @@ export default function Home() {
         <div className="flex w-full items-end justify-center gap-x-3 mb-4 flex-wrap">
           {Socials.map((social, index) => (
             <Link key={index} href={social.href}>
-              <social.icon className="w-5 h-5 text-foreground animate"/>
+              <social.icon className="w-5 h-5 text-foreground animate" />
             </Link>
           ))}
         </div>
 
-        <div className="flex flex-col gap-y-2 h-fit w-full p-2 rounded-xl border bg-popover/80 backdrop-blur-sm animate">
+        <div className="flex flex-col gap-y-2 h-fit w-full p-2 rounded-xl border bg-popover backdrop-blur-sm animate">
           <p className="text-clamp-sm text-popover-foreground w-fit animate">
             Creative Fullstack Developer Focusing on Next.js, Tailwind CSS and
             Supabase.
@@ -78,7 +78,7 @@ export default function Home() {
           {Products.map((product, index) => (
             <div
               key={index}
-              className={`w-full h-fit border bg-popover/80 backdrop-blur-sm rounded-xl p-2 gap-y-2 flex flex-col animate group cursor-pointer ${Products.length}`}
+              className={`w-full h-fit border bg-popover backdrop-blur-sm rounded-xl p-2 gap-y-2 flex flex-col animate group cursor-pointer ${Products.length}`}
             >
               <div className="relative w-full h-auto aspect-square rounded-lg bg-accent overflow-hidden">
                 <Image src={product.image} alt={product.name} fill />

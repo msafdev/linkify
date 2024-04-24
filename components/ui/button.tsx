@@ -18,7 +18,7 @@ const Button = ({
   icon?: ReactElement;
 }) => {
   return (
-    <button className="group cursor-pointer flex gap-x-2 w-full p-2 rounded-xl border hover:bg-popover-60 bg-popover/80 backdrop-blur-sm items-center h-16 animate">
+    <button className="group cursor-pointer flex gap-x-2 w-full p-2 rounded-xl border hover:bg-popover/80 bg-popover backdrop-blur-sm items-center h-16 animate">
       <div className="bg-accent text-accent-foreground border flex items-center justify-center w-auto h-full aspect-square rounded-lg group-hover:[&>svg]:scale-125 [&>svg]:animate animate">
         {Icon}
       </div>
