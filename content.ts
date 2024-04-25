@@ -22,6 +22,20 @@ import {
   BiLayout,
 } from "react-icons/bi";
 
+// Purpose: Toggle shown content on the website.
+const Toggle = {
+  socials: true,
+  bio: true,
+  links: true,
+  products: true,
+  blogs: true,
+};
+
+// MAKE ALL FALSE ON PRODUCTION
+const devMode = {
+  template: true,
+};
+
 // Purpose: Contains your social media links.
 // Customize: You can add more social links by copying the object and changing the values.
 // Icons: I use react-icons/tb (Tabler Icons) for the icons here.
@@ -132,4 +146,4 @@ const Blogs: BlogProps[] = [
   },
 ];
 
-export { Links, Products, Socials, Blogs };
+export { Links, Products, Socials, Blogs, Toggle, devMode };
