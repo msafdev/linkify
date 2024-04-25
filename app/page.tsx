@@ -10,14 +10,16 @@ import DotPattern from "@/components/magicui/dot-pattern";
 import { Button, DarkMode } from "@/components/ui/button";
 
 // Datas
-import { Links, Products, Socials } from "@/content";
+import { Blogs, Links, Products, Socials } from "@/content";
+import { RectangleCard, SquareCard } from "@/components/ui/card";
+import { RxStar, RxStarFilled } from "react-icons/rx";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between sm:p-24 bg-accent animate">
+    <main className="flex h-full max-h-screen flex-col items-center justify-between sm:p-24 bg-accent animate overflow-hidden">
       <section
         id="home"
-        className="flex flex-col items-center w-full sm:max-w-sm h-full grow sm:border sm:rounded-2xl overflow-hidden px-6 py-6 gap-y-3 relative bg-background animate"
+        className="flex flex-col overflow-y-auto items-center w-full sm:max-w-sm h-full grow sm:border sm:rounded-2xl overflow-hidden px-6 py-6 gap-y-3 relative bg-background animate"
       >
         {/* Magic UI */}
         <DotPattern
@@ -56,6 +58,7 @@ export default function Home() {
           ))}
         </div>
 
+        {/* Bio */}
         <div className="flex flex-col gap-y-2 h-fit w-full p-2 rounded-xl border bg-popover backdrop-blur-sm animate z-10">
           <p className="text-clamp-sm text-popover-foreground w-fit animate">
             Creative Fullstack Developer Focusing on Next.js, Tailwind CSS and
@@ -68,33 +71,22 @@ export default function Home() {
 
         {/* Social Links */}
         {Links.map((link, index) => (
-          <Button key={index} subtext={link.subtext} icon={<link.icon />}>
+          <Button key={index} subtext={link.subtext} icon={<link.icon size={20}/>}>
             {link.name}
           </Button>
         ))}
 
-        {/* Item Card */}
+        {/* Product Square */}
         <div className="grid grid-cols-2 w-full gap-3 z-10">
           {Products.map((product, index) => (
-            <div
-              key={index}
-              className={`w-full h-fit border bg-popover backdrop-blur-sm rounded-xl p-2 gap-y-2 flex flex-col animate group cursor-pointer ${Products.length}`}
-            >
-              <div className="relative w-full h-auto aspect-square rounded-lg bg-accent overflow-hidden">
-                <Image src={product.image} alt={product.name} fill />
-                <div className="absolute inset-0 w-full h-full bg-transparent group-hover:bg-accent/60 z-10 animate" />
-              </div>
-              <div className="flex flex-col w-full">
-                <h3 className="text-clamp-sm text-popover-foreground font-medium">
-                  {product.name}
-                </h3>
-                <p className="text-clamp-xs text-muted-foreground">
-                  ${product.price}
-                </p>
-              </div>
-            </div>
+            <SquareCard key={index} product={product} />
           ))}
         </div>
+
+        {/* Blog Card */}
+        {Blogs.map((blog, index) => (
+          <RectangleCard key={index} blog={blog} />
+        ))}
       </section>
     </main>
   );

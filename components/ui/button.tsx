@@ -19,7 +19,7 @@ const Button = ({
 }) => {
   return (
     <button className="group z-10 cursor-pointer flex gap-x-2 w-full p-2 rounded-xl border hover:bg-popover/80 bg-popover backdrop-blur-sm items-center h-16 animate">
-      <div className="bg-accent text-accent-foreground border flex items-center justify-center w-auto h-full aspect-square rounded-lg group-hover:[&>svg]:scale-125 [&>svg]:animate animate">
+      <div className="bg-accent text-accent-foreground border flex items-center justify-center w-auto h-full aspect-square rounded-lg group-hover:[&>svg]:scale-110 [&>svg]:animate animate">
         {Icon}
       </div>
       <div className="flex flex-col w-fit">
