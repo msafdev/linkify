@@ -22,6 +22,9 @@ const config = {
         "clamp-xs": "clamp(10px, 5vw, 12px)",
         "clamp-sm": "clamp(12px, 5vw, 14px)",
         clamp: "clamp(14px, 5vw, 16px)",
+        "clamp-md": "clamp(16px, 5vw, 18px)",
+        "clamp-lg": "clamp(18px, 5vw, 20px)",
+        "clamp-xl": "clamp(20px, 5vw, 24px)",
       },
       colors: {
         border: "hsl(var(--border))",
