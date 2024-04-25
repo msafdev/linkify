@@ -1,5 +1,10 @@
 // Type: TypeScript typesafe file.
-import { ProductProps, LinkProps, SocialProps } from "./lib/types/content";
+import {
+  ProductProps,
+  LinkProps,
+  SocialProps,
+  BlogProps,
+} from "./lib/types/content";
 
 // Social Icons
 import {
@@ -10,7 +15,12 @@ import {
 } from "react-icons/tb";
 
 // Link Icons
-import { BiArrowToBottom, BiBadgeCheck, BiDollar, BiLayout } from "react-icons/bi";
+import {
+  BiArrowToBottom,
+  BiBadgeCheck,
+  BiDollar,
+  BiLayout,
+} from "react-icons/bi";
 
 // Purpose: Contains your social media links.
 // Customize: You can add more social links by copying the object and changing the values.
@@ -57,7 +67,7 @@ const Links: LinkProps[] = [
   },
   {
     id: 2,
-    name: "Minima",
+    name: "Minilinks",
     href: "/",
     subtext: "A minimal Linktree alternative",
     icon: BiLayout,
@@ -78,13 +88,14 @@ const Links: LinkProps[] = [
   },
 ];
 
-// Purpose: Contains the products for the website.
+// Purpose: Contains the values for the square cards on the website. Use to show ur products.
 // Customize: You can add more products by copying the object and changing the values.
 const Products: ProductProps[] = [
   {
     id: 1,
     name: "Product 1",
     price: 36,
+    rate: 4.5,
     image: "https://ui.shadcn.com/placeholder.svg",
     link: "/",
     tags: ["tag-1", "tag-2"],
@@ -93,10 +104,32 @@ const Products: ProductProps[] = [
     id: 2,
     name: "Product 2",
     price: 18,
+    rate: 3.5,
     image: "https://ui.shadcn.com/placeholder.svg",
     link: "/",
     tags: ["tag-3", "tag-4"],
   },
 ];
 
-export { Links, Products, Socials };
+// Purpose: Contains the values for the rectangle cards on the website. Use to show ur blog posts.
+// Customize: You can add more blogs by copying the object and changing the values.
+const Blogs: BlogProps[] = [
+  {
+    id: 1,
+    title: "Blog 1",
+    description: "Lorem ipsum dolor sit amet.",
+    image: "https://ui.shadcn.com/placeholder.svg",
+    link: "/",
+    tags: ["Personal"],
+  },
+  {
+    id: 2,
+    title: "Blog 2",
+    description: "Lorem ipsum dolor sit amet.",
+    image: "https://ui.shadcn.com/placeholder.svg",
+    link: "/",
+    tags: ["UI", "UX"],
+  },
+];
+
+export { Links, Products, Socials, Blogs };

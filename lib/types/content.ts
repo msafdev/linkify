@@ -19,6 +19,16 @@ export interface ProductProps {
   id: number;
   name: string;
   price: number;
+  rate: number;
+  image: string;
+  link: string;
+  tags: string[];
+}
+
+export interface BlogProps {
+  id: number;
+  title: string;
+  description: string;
   image: string;
   link: string;
   tags: string[];
