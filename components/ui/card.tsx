@@ -42,7 +42,7 @@ const RectangleCard = ({
   return (
     <div
       className={cn(
-        "grid grid-cols-2 w-full gap-3 z-10 bg-popover rounded-xl p-3 border group animate",
+        "grid grid-cols-2 w-full gap-3 z-10 bg-popover rounded-xl p-3 border group animate cursor-pointer",
         className
       )}
     >
