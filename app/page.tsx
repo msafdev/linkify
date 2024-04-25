@@ -37,7 +37,7 @@ export default function Home() {
             <Image
               src={Avatar}
               alt="Avatar Image"
-              className="w-full h-full object-cover translate-y-1"
+              className="w-full h-full object-cover"
             />
           </div>
           <div className="flex w-fit justify-center flex-col">
