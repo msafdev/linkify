@@ -12,7 +12,9 @@ const SquareCard = ({
   className?: string;
 }) => {
   return (
-    <div
+    <Link
+      href={product.url}
+      target="_blank"
       className={cn(
         "w-full h-fit border bg-popover backdrop-blur-sm rounded-xl p-2 gap-y-2 flex flex-col animate group cursor-pointer",
         className
@@ -28,7 +30,7 @@ const SquareCard = ({
         </h3>
         <p className="text-clamp-sm text-muted-foreground">${product.price}</p>
       </div>
-    </div>
+    </Link>
   );
 };
 
@@ -70,7 +72,8 @@ const RectangleCard = ({
             ))}
           </div>
           <Link
-            href={blog.link}
+            href={blog.url}
+            target="_blank"
             className="text-foreground w-fullfont-medium underline text-clamp-sm animate"
           >
             Read More
