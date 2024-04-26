@@ -60,7 +60,11 @@ export default function Home() {
         {Toggle.socials && (
           <div className="flex w-full items-end justify-center gap-x-3 mb-4 flex-wrap z-10">
             {Socials.map((social, index) => (
-              <Link key={index} href={social.url}>
+              <Link
+                aria-label={`Go to ${social.url}`}
+                key={index}
+                href={social.url}
+              >
                 <social.icon className="w-5 h-5 text-foreground animate" />
               </Link>
             ))}
