@@ -127,7 +127,8 @@ _Below is the step-by-step guide on how to install and setup this project effici
    ```sh
    npm install
    ```
-3. Change to content of the page on `content/content.ts`
+3. Change the base color theme using [Shadcn themes](https://ui.shadcn.com/themes), then paste it to `globals.css`
+4. Change to content of the page on `content/content.ts`
 
 #### Development
 
