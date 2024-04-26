@@ -93,6 +93,7 @@ export default function Home() {
               key={index}
               subtext={link.subtext}
               icon={<link.icon size={20} />}
+              href={link.url}
             >
               {link.name}
             </Button>
