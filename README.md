@@ -1,4 +1,4 @@
-<!-- Improved compatibility of back to top link: See: https://github.com/msafdev/msaf-link/pull/73 -->
+<!-- Improved compatibility of back to top link: See: https://github.com/msafdev/linkify/pull/73 -->
 <a name="readme-top"></a>
 <!--
 *** Thanks for checking out the Best-README-Template. If you have a suggestion
@@ -27,7 +27,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/msafdev/msaf-link">
+  <a href="https://github.com/msafdev/linkify">
     <h3 align="center">Linkify</h3>
   </a>
 
@@ -36,11 +36,11 @@
   <p align="center">
     Linktree alternative with little to no code required!
     <br />
-    <a href="https://msaf-link.vercel.app">View Demo</a>
+    <a href="https://linkify-template.vercel.app">View Demo</a>
     ·
-    <a href="https://github.com/msafdev/msaf-link/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
+    <a href="https://github.com/msafdev/linkify/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
-    <a href="https://github.com/msafdev/msaf-link/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
+    <a href="https://github.com/msafdev/linkify/issues/new?labels=enhancement&template=feature-request---.md">Request Feature</a>
   </p>
 </div>
 
@@ -117,15 +117,31 @@ To get a local copy up and running follow these simple example steps.
 
 _Below is the step-by-step guide on how to install and setup this project efficiently._
 
+#### Setup
+
 1. Clone the repo
    ```sh
-   git clone https://github.com/msafdev/msaf-link.git
+   git clone https://github.com/msafdev/linkify.git
    ```
 2. Install NPM packages
    ```sh
    npm install
    ```
-3. Change to content of the page on `content.ts`
+3. Change to content of the page on `content/content.ts`
+   
+#### Using the generator
+
+1. Go to your localhost:PORT/generate
+2. Add each link you want to add to your page on their respective forms
+3. Click on the "Generate" button
+4. Copy the content of generated object and paste it on `content/content.ts`
+
+####
+   
+#### Deployment
+
+1. Change the `template = true` on `devMode` to `false`
+2. Build the project or deploy it to Vercel (or any other hosting service actually)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -145,11 +161,12 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 <!-- ROADMAP -->
 ## Roadmap
 
+- [x] Add `content.ts` file generator
+- [ ] Add theme switcher with session storage
 - [ ] Add Changelog
-- [ ] Add `content.ts` file generator
 - [ ] Add Additional Templates w/ Examples
 
-See the [open issues](https://github.com/msafdev/msaf-link/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/msafdev/linkify/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -187,7 +204,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 
 Your Name - [@your_twitter](https://twitter.com/sal_moon) - faris.kocak@gmail.com
 
-Project Link: [https://github.com/msafdev/msaf-link](https://github.com/msafdevmsaf-linkrepo_name)
+Project Link: [https://github.com/msafdev/linkify](https://github.com/msafdevmsaf-linkrepo_name)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -210,16 +227,16 @@ These are the resources that helped me build this project:
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/msafdev/msaf-link.svg?style=for-the-badge
-[contributors-url]: https://github.com/msafdev/msaf-link/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/msafdev/msaf-link.svg?style=for-the-badge
-[forks-url]: https://github.com/msafdev/msaf-link/network/members
-[stars-shield]: https://img.shields.io/github/stars/msafdev/msaf-link.svg?style=for-the-badge
-[stars-url]: https://github.com/msafdev/msaf-link/stargazers
-[issues-shield]: https://img.shields.io/github/issues/msafdev/msaf-link.svg?style=for-the-badge
-[issues-url]: https://github.com/msafdev/msaf-link/issues
-[license-shield]: https://img.shields.io/github/license/msafdev/msaf-link.svg?style=for-the-badge
-[license-url]: https://github.com/msafdev/msaf-link/blob/main/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/msafdev/linkify.svg?style=for-the-badge
+[contributors-url]: https://github.com/msafdev/linkify/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/msafdev/linkify.svg?style=for-the-badge
+[forks-url]: https://github.com/msafdev/linkify/network/members
+[stars-shield]: https://img.shields.io/github/stars/msafdev/linkify.svg?style=for-the-badge
+[stars-url]: https://github.com/msafdev/linkify/stargazers
+[issues-shield]: https://img.shields.io/github/issues/msafdev/linkify.svg?style=for-the-badge
+[issues-url]: https://github.com/msafdev/linkify/issues
+[license-shield]: https://img.shields.io/github/license/msafdev/linkify.svg?style=for-the-badge
+[license-url]: https://github.com/msafdev/linkify/blob/main/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/muhammadsalmoon
 [product-screenshot]: public/screenshot.png
