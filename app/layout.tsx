@@ -5,8 +5,8 @@ import { GeistSans } from "geist/font/sans";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Linktree Alt",
-  description: "Made by @msafdev",
+  title: "MSAF | Links",
+  description: "Made with Linkify",
 };
 
 export default function RootLayout({
