@@ -31,13 +31,13 @@ const Toggle = {
   socials: true,
   bio: true,
   links: true,
-  products: true,
-  blogs: true,
+  products: false,
+  blogs: false,
 };
 
 // MAKE ALL FALSE ON PRODUCTION
 const devMode = {
-  template: true,
+  template: false,
 };
 
 // Purpose: Contains your bio information.
@@ -49,7 +49,7 @@ const Bio: BioProps = {
   description:
     "Creative Fullstack Developer Focusing on Next.js, Tailwind CSS and Supabase.",
   avatar: Avatar,
-  url: "/",
+  url: "https://github.com/msafdev",
 };
 
 // Purpose: Contains your social media links.
@@ -58,19 +58,19 @@ const Bio: BioProps = {
 // Explore more icons here (https://react-icons.github.io/react-icons/)
 const Socials: SocialProps[] = [
   {
-    url: "/",
+    url: "https://github.com/msafdev",
     icon: TbBrandGithub,
   },
   {
-    url: "/",
+    url: "https://instagram.com/msalman_af",
     icon: TbBrandInstagram,
   },
   {
-    url: "/",
+    url: "https://linkedin.com/in/muhammadsalmoon",
     icon: TbBrandLinkedin,
   },
   {
-    url: "/",
+    url: "https://twitter.com/msafdev",
     icon: TbBrandTwitter,
   },
 ];
@@ -82,26 +82,26 @@ const Socials: SocialProps[] = [
 const Links: LinkProps[] = [
   {
     name: "Portfolio",
-    url: "/",
+    url: "https://msaf.tech",
     subtext: "All of my personal projects",
     icon: BiBadgeCheck,
   },
   {
-    name: "Minilinks",
-    url: "/",
+    name: "Linkify",
+    url: "https://github.com/msafdev/linkify",
     subtext: "A minimal Linktree alternative",
     icon: BiLayout,
   },
   {
     name: "Saweria",
-    url: "/",
+    url: "https://saweria.co/msafdev",
     subtext: "Support me on Saweria",
     icon: BiDollar,
   },
   {
-    name: "Installation",
-    url: "/",
-    subtext: "How to install this project",
+    name: "Playground",
+    url: "https://msaf.tech/playground",
+    subtext: "Where i test new things",
     icon: BiArrowToBottom,
   },
 ];
