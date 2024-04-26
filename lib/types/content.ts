@@ -1,3 +1,4 @@
+import { StaticImageData } from "next/image";
 import { IconType } from "react-icons/lib";
 
 export interface SocialProps {
@@ -25,4 +26,12 @@ export interface BlogProps {
   image: string;
   url: string;
   tags: string[];
+}
+
+export interface BioProps {
+  name: string;
+  title: string;
+  avatar: StaticImageData | string;
+  description: string;
+  url: string;
 }

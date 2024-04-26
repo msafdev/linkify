@@ -4,9 +4,10 @@ import {
   LinkProps,
   SocialProps,
   BlogProps,
+  BioProps,
 } from "../types/content";
 
-// Social Icons
+// Social Icons (Remove if not needed, this can improve performance.)
 import {
   TbBrandGithub,
   TbBrandInstagram,
@@ -14,13 +15,16 @@ import {
   TbBrandTwitter,
 } from "react-icons/tb";
 
-// Link Icons
+// Link Icons (Remove if not needed, this can improve performance.)
 import {
   BiArrowToBottom,
   BiBadgeCheck,
   BiDollar,
   BiLayout,
 } from "react-icons/bi";
+
+// Import your avatar here
+import Avatar from "@/public/images/asset/avatar.jpg";
 
 // Purpose: Toggle shown content on the website.
 const Toggle = {
@@ -34,6 +38,18 @@ const Toggle = {
 // MAKE ALL FALSE ON PRODUCTION
 const devMode = {
   template: true,
+};
+
+// Purpose: Contains your bio information.
+// Customize: You can change the values to your own.
+// Avatar: Import your avatar at the top of the file or use a URL.
+const Bio: BioProps = {
+  name: "msafdev",
+  title: "Software Engineer",
+  description:
+    "Creative Fullstack Developer Focusing on Next.js, Tailwind CSS and Supabase.",
+  avatar: Avatar,
+  url: "/",
 };
 
 // Purpose: Contains your social media links.
@@ -126,4 +142,4 @@ const Blogs: BlogProps[] = [
   },
 ];
 
-export { Links, Products, Socials, Blogs, Toggle, devMode };
+export { Links, Products, Socials, Blogs, Toggle, devMode, Bio };

@@ -11,7 +11,14 @@ import { Button, DarkMode } from "@/components/ui/button";
 import { RectangleCard, SquareCard } from "@/components/ui/card";
 
 // Datas
-import { Blogs, Links, Products, Socials, Toggle } from "@/lib/content/content";
+import {
+  Blogs,
+  Links,
+  Products,
+  Socials,
+  Toggle,
+  Bio,
+} from "@/lib/content/content";
 
 export default function Home() {
   return (
@@ -34,17 +41,17 @@ export default function Home() {
         <div className="flex w-full items-center justify-center gap-x-3 mb-4 z-10">
           <div className="w-16 h-auto aspect-square relative rounded-full overflow-hidden p-1 border bg-black">
             <Image
-              src={Avatar}
-              alt="Avatar Image"
+              src={Bio.avatar}
+              alt={`${Bio.name}'s avatar`}
               className="w-full h-full object-cover"
             />
           </div>
           <div className="flex w-fit justify-center flex-col">
             <h1 className="text-clamp font-medium text-foreground animate">
-              msafdev
+              {Bio.name}
             </h1>
             <p className="text-clamp-sm text-muted-foreground animate">
-              Frontend Developer
+              {Bio.title}
             </p>
           </div>
         </div>
@@ -64,12 +71,14 @@ export default function Home() {
         {Toggle.socials && (
           <div className="flex flex-col gap-y-2 h-fit w-full p-2 rounded-xl border bg-popover backdrop-blur-sm animate z-10">
             <p className="text-clamp-sm text-popover-foreground w-fit animate">
-              Creative Fullstack Developer Focusing on Next.js, Tailwind CSS and
-              Supabase.
+              {Bio.description}
             </p>
-            <button className="bg-primary text-primary-foreground border w-full py-2 rounded-lg hover:bg-primary/90 font-medium text-clamp-sm animate">
+            <Link
+              href={Bio.url}
+              className="bg-primary text-primary-foreground border w-full py-2 rounded-lg hover:bg-primary/90 text-center font-medium text-clamp-sm animate"
+            >
               Let's Connect
-            </button>
+            </Link>
           </div>
         )}
 
