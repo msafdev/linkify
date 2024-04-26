@@ -36,7 +36,7 @@
   <p align="center">
     Linktree alternative with little to no code required!
     <br />
-    <a href="https://linkify-template.vercel.app">View Demo</a>
+    <a href="https://linkify-demo.vercel.app">View Demo</a>
     ·
     <a href="https://github.com/msafdev/linkify/issues/new?labels=bug&template=bug-report---.md">Report Bug</a>
     ·
@@ -62,7 +62,6 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
@@ -201,9 +200,9 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://twitter.com/sal_moon) - faris.kocak@gmail.com
+Your Name - [@your_twitter](https://linkedin.com/in/muhammadsalmoon) // faris.kocak@gmail.com
 
-Project Link: [https://github.com/msafdev/linkify](https://github.com/msafdevmsaf-linkrepo_name)
+Project Link: [https://github.com/msafdev/linkify](https://github.com/msafdev/linkify)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
