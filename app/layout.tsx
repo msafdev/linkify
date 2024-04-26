@@ -15,9 +15,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="dark animate h-screen relative">
+    <html lang="en" className="dark animate h-[100svh] relative">
       <body
-        className={`animate min-h-screen flex flex-col ${GeistSans.className}`}
+        className={`animate min-h-[100svh] flex flex-col ${GeistSans.className}`}
       >
         {children}
       </body>

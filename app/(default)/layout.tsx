@@ -11,14 +11,14 @@ export const metadata: Metadata = {
   description: "Made by @msafdev",
 };
 
-export default function DashboardLayout({
+export default function GenerateLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
     <main
-      className={`animate min-h-screen flex flex-col ${GeistSans.className}`}
+      className={`animate min-h-[100svh] flex flex-col ${GeistSans.className}`}
     >
       {children}
       {devMode.template && (
