@@ -200,7 +200,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://linkedin.com/in/muhammadsalmoon) // faris.kocak@gmail.com
+Your Name - [Linkedin](https://linkedin.com/in/muhammadsalmoon) // faris.kocak@gmail.com
 
 Project Link: [https://github.com/msafdev/linkify](https://github.com/msafdev/linkify)
 
