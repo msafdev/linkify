@@ -23,9 +23,9 @@ const Button = ({
         {Icon}
       </div>
       <div className="flex flex-col w-fit">
-        <h3 className="text-clamp-sm text-left text-popover-foreground w-fit font-medium">
+        <p className="text-clamp-sm text-left text-popover-foreground w-fit font-medium">
           {children}
-        </h3>
+        </p>
         <p className="text-clamp-xs text-left text-muted-foreground">
           {subtext}
         </p>
@@ -49,6 +49,7 @@ const DarkMode = () => {
   return (
     <button
       onClick={toggleDark}
+      aria-label="Toggle Dark Mode"
       className="w-8 h-8 border rounded-full bg-popover flex items-center justify-center absolute right-6 top-6 z-20"
     >
       {dark ? <RxSun size={16} /> : <RxMoon size={16} />}
