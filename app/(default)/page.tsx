@@ -25,7 +25,7 @@ export default function Home() {
     <main className="flex h-full grow flex-col items-center justify-between animate sm:py-24">
       <section
         id="home"
-        className="flex flex-col items-center w-full sm:max-w-sm h-full grow px-6 py-6 gap-y-3 relative bg-background animate"
+        className="flex flex-col items-center justify-center w-full sm:max-w-sm h-full grow px-6 py-6 gap-y-3 relative bg-background animate"
       >
         {/* Magic UI */}
         <DotPattern
