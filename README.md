@@ -128,31 +128,29 @@ _Below is the step-by-step guide on how to install and setup this project effici
    npm install
    ```
 3. Change to content of the page on `content/content.ts`
+
+#### Development
+
+1. Run the project
+   ```sh
+   npm run dev
+   ```
+2. Open your browser and go to `http://localhost:PORT`
+3. Make changes to the content of the page on `content/content.ts`
+4. Make changes to the theme by adding "dark" on the html of the page
+5. Customize the code to your liking, and you're good to go!
    
 #### Using the generator
 
-1. Go to your localhost:PORT/generate
+1. Go to your `http://localhost:PORT/generate`
 2. Add each link you want to add to your page on their respective forms
 3. Click on the "Generate" button
 4. Copy the content of generated object and paste it on `content/content.ts`
-
-####
    
 #### Deployment
 
-1. Change the `template = true` on `devMode` to `false`
+1. Change the `devMode.template` on `content/content.ts` to `false`
 2. Build the project or deploy it to Vercel (or any other hosting service actually)
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
