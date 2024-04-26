@@ -75,7 +75,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][product-screenshot]](https://link.msaf.tech)
 
 Hey there! Want a simple looking link management like Linktree/Milkshake but tired of it looking so bland? Look no further! **Linkify** is here to simplify your link management experience. It's packed with features to make your life easier.
 
@@ -200,7 +200,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@your_twitter](https://linkedin.com/in/muhammadsalmoon) // faris.kocak@gmail.com
+Your Name - [Linkedin](https://linkedin.com/in/muhammadsalmoon) // faris.kocak@gmail.com
 
 Project Link: [https://github.com/msafdev/linkify](https://github.com/msafdev/linkify)
 
