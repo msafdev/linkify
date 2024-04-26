@@ -7,8 +7,8 @@ import { devMode } from "@/lib/content/content";
 import { RxGithubLogo, RxLayout } from "react-icons/rx";
 
 export const metadata: Metadata = {
-  title: "Linktree Alt",
-  description: "Made by @msafdev",
+  title: "MSAF | Links",
+  description: "Made with Linkify",
 };
 
 export default function GenerateLayout({
